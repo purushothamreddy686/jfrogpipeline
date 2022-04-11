@@ -27,4 +27,18 @@ User name : admin
 Password: admin@123
 
 
-Integrating Artifactory with Jenkins: 
+Settingup code in my local and creating docker file and building it like docker images to push to artifactory:
+
+1)create dockerfile to build spring-petclinic as docker image.
+2)run "mvn clean install (complie the code)
+3)run "mvn test" (intigrating test)
+
+creating jenkins file to create automated pipeline:
+STAGES :
+1)clone code from git hub .
+2)compile code with (mvn install).
+3)run the tests("mvn test")
+4)package the package as runnible docker image (add docker file for that repo.)
+5)push that docker file to artifactory server.
+
+Integrating Artifactory with Jenkins to push docker image: 
