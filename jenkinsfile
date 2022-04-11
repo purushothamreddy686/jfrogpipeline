@@ -2,11 +2,25 @@ pipeline {
     agent any
 
     stages {
-        stage ('Compile code Stage') {
-
+        stage ('Pull Github Code') {
             steps {
-                withMaven(maven : 'maven_3_5_0') {
-                    sh 'mvn clean compile'
+                script {
+                    dir('gitlab-code') {
+                        // Git credentials pull spring boot code 
+                        // Git credentials pull docker code
+                    }
+                }
+            }
+        }
+        stage ('Compile code Stage') {
+            steps {
+                script {
+                    dir('gitlab-code') {
+                        withMaven(maven : 'maven_3_5_0') {
+                            // 
+                            sh 'mvn clean compile'
+                        }
+                    }
                 }
             }
         }
@@ -14,8 +28,12 @@ pipeline {
         stage ('Run Testing Stage') {
 
             steps {
-                withMaven(maven : 'maven_3_5_0') {
-                    sh 'mvn test'
+                steps {
+                    dir("github-code") {
+                        withMaven(maven : 'maven_3_5_0') {
+                            sh 'mvn test'
+                        }
+                    }
                 }
             }
         }
@@ -23,14 +41,22 @@ pipeline {
 
         stage ('package project as docker image') {
             steps {
-                
+                script {
+                    dir("github-code") {
+                        // run a "docker build -f Dockerfile"
+                    }
                 }
             }
         }
-
+        
         stage ('publish docker image to artifactor') {
             steps {
-                
+                script {
+                    // withCredentials(username: artifactoryId, password: artifactoryPw, usernameValue: username, passwordValue: password ) {
+                    // docker login -u username -p password artifactoryURL //
+                    // Tag docker build number docker tag oneartifactoryURL
+                    // Push docker push (tagname) // or you can use the jfrog api 
+                    // }
                 }
             }
         }
