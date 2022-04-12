@@ -1,3 +1,5 @@
+
+# jenkins url (http://ec2-52-200-236-148.compute-1.amazonaws.com:8080/job/jfrogpipeline/):
 # Artifacotry Setup on AWSEC2 (http://ec2-52-200-236-148.compute-1.amazonaws.com:8081/):
 
 ## Pre-requisites:
