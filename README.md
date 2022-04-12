@@ -50,3 +50,10 @@ Password: admin@123
 
 ```
 
+## Runnible docker image and commands: 
+```
+docker commad to build      : docker build -f Dockerfile  -t spring-petclinic
+docker command to run image : docker run -p 8080:8080 -t spring-pet-clinic
+
+```
+
