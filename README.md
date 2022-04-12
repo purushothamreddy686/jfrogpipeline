@@ -42,5 +42,9 @@ Password: admin@123
 4)package the package as runnible docker image (add docker file for that repo.)
 5)push that docker file to artifactory server.
 
+
+![pipeline!]https://user-images.githubusercontent.com/12862506/163022148-4bfaa3e0-74e7-4329-8d52-2a1c9f7e3cdb.png
+
+
 ```
 
