@@ -31,9 +31,9 @@ Password: admin@123
 
 ## Settingup code in my local and creating docker file and building it like docker images to push to artifactory:
 
-###1)create dockerfile to build spring-petclinic as docker image.
-###2)run "mvn clean install (complie the code)
-###3)run "mvn test" (intigrating test)
+### 1)create dockerfile to build spring-petclinic as docker image.
+### 2)run "mvn clean install (complie the code)
+### 3)run "mvn test" (intigrating test)
 
 ## Creating jenkins file to create automated pipeline and push the image to artifactory:
 ```
