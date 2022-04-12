@@ -33,7 +33,7 @@ Password: admin@123
 2)run "mvn clean install (complie the code)
 3)run "mvn test" (intigrating test)
 
-## Creating jenkins file to create automated pipeline:
+## Creating jenkins file to create automated pipeline and push the image to artifactory:
 ```
 ### STAGES :(script is located in jenkins file)https://github.com/purushothamreddy686/jfrogpipeline/blob/main/jenkinsfile
 1)clone code from git hub .
@@ -43,6 +43,4 @@ Password: admin@123
 5)push that docker file to artifactory server.
 
 ```
-
-## Integrating Artifactory with Jenkins to push docker image: 
 
