@@ -7,7 +7,7 @@
 2. Open port 8081 and 8082 in the security group
 3. installing jfrog artifactory on ec2
 4. installation of jenkins on Ec2.
-5. Configur that box with docker software.
+5. Configure that box with docker software.
 6. install maven 3.5.0 to support project.
 7. install java and stup java home to support project and jenkins.
 
@@ -17,7 +17,7 @@
 2. Path download. cd /opt 
 3. wget https://jfrog.bintray.com/artifactory/jfrog-artifactory-oss-6.9.6.zip 
 4. extract artifactory tar.gz file unzip jfrog-artifactory-oss-6.9.6.zip 
-5. Go inside to bin directory and start the services cd /opt/jfrog-artifactory-oss-6.9.6/bin
+5. Go to bin directory and start the services cd /opt/jfrog-artifactory-oss-6.9.6/bin
 6. ./artifactory.sh start 
 7. access artifactory from browser http://<PUBLIC_IP_Address>:8081  
 
@@ -36,14 +36,14 @@ Password: admin@123
 ```
 ## Implementation steps:
 
-### Settingup code in my local system and try to build the code to check any dependencyes with maven created docker file to build docker image.
+### Settingup code in my local system and try to build the code to check any dependencies with maven created docker file to build docker image.
 
-## Created jenkins pipeline using pipleine script to build and push the image to artifactory.(jenkinsfile in repo )
+## Created jenkins pipeline using pipeline script to build and push the image to artifactory.(jenkinsfile in repo )
 ```
 step 1: (git cloning code for spring-petclinic)
 step 2: (mvn compile code stage)
 step 3: (mvn test execution stage)
-step 4: (After adding that docker file build image to push to artifactor )
+step 4: (After adding that docker file build image to push to artifactory )
 step 5: (pushing that inage to artifactory)
 ```
 
