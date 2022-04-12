@@ -7,6 +7,10 @@
 2. Open port 8081 and 8082 in the security group
 3. installing jfrog artifactory on ec2
 4. installation of jenkins on Ec2.
+5. Configur that box with docker software.
+6. install maven 3.5.0 to support project.
+7. install java and stup java home to support project and jenkins.
+
 
 ## Installation Steps jfrog on EC2.
 1. Login to instance as a root user and install Java  yum install java-1.8* -y  
