@@ -32,9 +32,10 @@ Password: admin@123
 ```
 ## Implementation steps:
 
-```
-## Settingup code in my local and creating docker file and try to build the code to check any dependencyes with maven.
+### Settingup code in my local and creating docker file and try to build the code to check any dependencyes with maven.
+
 ## Created jenkins pipeline using pipleine script to build and push the image to artifactory.(jenkinsfile in repo )
+```
 ## step 1: (git cloning code for spring-petclinic)
 ## step 2: (mvn compile code stage)
 ## step 3: (mvn test execution stage)
