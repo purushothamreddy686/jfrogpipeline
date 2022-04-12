@@ -36,11 +36,11 @@ Password: admin@123
 
 ## Created jenkins pipeline using pipleine script to build and push the image to artifactory.(jenkinsfile in repo )
 ```
-## step 1: (git cloning code for spring-petclinic)
-## step 2: (mvn compile code stage)
-## step 3: (mvn test execution stage)
-## step 4: (After adding that docker file build image to push to artifactor )
-## step 5: (pushing that inage to artifactory)
+step 1: (git cloning code for spring-petclinic)
+step 2: (mvn compile code stage)
+step 3: (mvn test execution stage)
+step 4: (After adding that docker file build image to push to artifactor )
+step 5: (pushing that inage to artifactory)
 ```
 
 ## Runnible docker image and commands: 
