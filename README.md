@@ -32,7 +32,7 @@ Password: admin@123
 ```
 ## Implementation steps:
 
-### Settingup code in my local and creating docker file and try to build the code to check any dependencyes with maven.
+### Settingup code in my local system and try to build the code to check any dependencyes with maven created docker file to build docker image.
 
 ## Created jenkins pipeline using pipleine script to build and push the image to artifactory.(jenkinsfile in repo )
 ```
@@ -43,9 +43,9 @@ step 4: (After adding that docker file build image to push to artifactor )
 step 5: (pushing that inage to artifactory)
 ```
 
-## Runnible docker image and commands: 
+## Runnable docker image and commands: 
 ```
-docker commad to build      : docker build -f Dockerfile  -t spring-petclinic
+docker command to build      : docker build -f Dockerfile  -t spring-petclinic
 docker command to run image : docker run -p 8080:8080 -t spring-pet-clinic
 
 ```
